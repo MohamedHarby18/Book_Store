@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400..700&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Indie+Flower&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --blue: rgb(1, 79, 134);
+    --navy-blue: rgb(1, 42, 74);
+    --light-blue: rgb(97, 165, 194);
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --light-bg: rgb(214, 204, 194);
+    --beige: rgb(174, 138, 103);
+    --red: rgb(187, 53, 53);
+    --font-primary: "Libre Bodoni", serif;
+    --font-secondary: "Indie Flower", cursive;
+    --font-heading: "Anton", sans-serif;
+}
