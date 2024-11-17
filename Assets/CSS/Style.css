@@ -50,8 +50,10 @@ footer h5{
 }
 
 .nav-link:hover {
-    color:var(--blue) !important;
-    text-decoration: underline !important;
+    background-color: var(--blue) !important;
+    color:var(--white) !important;
+    text-decoration: none !important;
+    border-radius: 50px !important;
 }
 
 .Login-button {
