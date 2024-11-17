@@ -119,8 +119,11 @@ footer h5{
 }
 
 .nav-link:hover {
-    color:var(--blue) !important;
-    text-decoration: underline !important;
+    color:var(--white) !important;
+    text-decoration:none !important;
+    background-color: var(--blue) !important;
+    border-radius: 50px !important;
+    transform: translateY(-4px) !important;
 }
 
 .Login-button {
