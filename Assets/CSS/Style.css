@@ -363,6 +363,13 @@ form.d-flex button:hover{
     font-size: 4rem !important;
     width: 100%; 
 }
+
+.card-text{
+    font-size: x-small;
+}
+.card-title{
+    font-size: small;
+}
 /**books mini view decoration end**/
 /*******************************************************************************************************************************/
 /**footer start**/
