@@ -172,7 +172,7 @@ form.d-flex button:hover{
 /* Main Section After nav bar start */
 /*background*/
 #nx-nav {
-    background-image: url(/Assets/imgs/section\ backgroound.jpg); /* Fix image path */
+    background-image: url(Assets/imgs/section backgroound.jpg); /* Fix image path */
     padding-top: 7rem;
     padding-bottom: 13rem;
     position: relative;
@@ -282,7 +282,8 @@ form.d-flex button:hover{
 
 
 .ex-col:hover {
-    color: var(--primary-color);  
+    color: var(--primary-color);
+/*    fix the color*/
 }
 
 /* Responsiveness */
@@ -297,3 +298,7 @@ form.d-flex button:hover{
 .ex-col:hover {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
 }
+
+
+
+
