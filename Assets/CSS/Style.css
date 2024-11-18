@@ -13,9 +13,7 @@
     --font-secondary: "Indie Flower", cursive;
     --font-heading: "Anton", sans-serif;
 }
-body{
-    height: 100rem;
-}
+
 
 /**animation section**/
 @keyframes pulse {
@@ -96,15 +94,6 @@ header h1 {
     font-size: 50px; 
     color: #000; 
 }
-footer {
-    background-color: #333;
-    text-align: center;
-}
-
-footer h5{
-    color: aliceblue;
-    padding: 10px;
-}
 /* nav start */
 .navbar {
     padding: 0.5rem 1rem;
@@ -119,8 +108,11 @@ footer h5{
 }
 
 .nav-link:hover {
-    color:var(--blue) !important;
-    text-decoration: underline !important;
+    color:var(--white) !important;
+    text-decoration:none !important;
+    background-color: var(--blue) !important;
+    border-radius: 50px !important;
+    transform: translateY(-4px) !important;
 }
 
 .Login-button {
@@ -204,9 +196,9 @@ form.d-flex button:hover{
 }
 /*text in the section*/
 .nx-nav-row h1 {
-    font: var(--font-heading) !important; 
+    font-family: var(--font-heading) !important; 
     font-size: 7rem !important;
-    font-weight: 600 !important;
+    font-weight: 300 !important;
     animation: glow 1.5s ease-in-out infinite alternate, fadeInScale 2s ease-out forwards, colorChange 3s ease-in-out infinite alternate;
 }
 .nx-nav-row p{
@@ -263,7 +255,8 @@ form.d-flex button:hover{
 /**some grides**/
 
 .ex-row {
-    margin-top: 20px;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
 }
 
 /* Style columns */
@@ -297,3 +290,119 @@ form.d-flex button:hover{
 .ex-col:hover {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
 }
+/*****************************************************************************************/
+/**books mini view decoration start**/
+.best-seller h1{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center !important; 
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-family: var(--font-heading);
+    font-size: 4rem !important;
+    width: 100%; 
+    
+}
+.books-mini-view{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.books-mini-view a{
+    text-decoration: none;
+    color: var(--black);
+}
+.card-img-top {
+    width: 100%; 
+    height: 20rem;
+    object-fit: cover; 
+    overflow: hidden; 
+    transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05); 
+}
+
+.btn-book-card{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background-color: var(--beige) !important;
+    border: var(--light-bg) !important;
+    font-family: var(--font-primary) !important;
+}
+.btn-book-card:hover{
+    background-color: var(--light-bg) !important;
+    border: var(--beige) !important;
+    transform: translateY(-4px) !important;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+/**books mini view decoration end**/
+/*******************************************************************************************************************************/
+/**footer start**/
+.main-footer {
+    background-color: var(--navy-blue); 
+    color: var(--white); 
+    padding-top: 6rem;
+    text-align: center;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+/* Social Links */
+.social-linkes-container {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem; 
+    flex-wrap: wrap;
+}
+
+.social-linkes-container i {
+    font-size: 2rem;
+    color: var(--white); 
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.social-linkes-container i:hover {
+    color: var(--beige); 
+    transform: scale(1.2); 
+}
+
+/* footer links */
+.footer-ul-container {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem; 
+    flex-wrap: wrap;
+}
+
+.footer-ul-container .footer-item {
+    text-decoration: none;
+    color: var(--white);
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.footer-ul-container .footer-item:hover {
+    color: var(--beige); 
+}
+
+/* store name and copy right */
+.footer-company {
+    margin-top: 2rem;
+    font-size: 14px;
+    color: var(--white);
+    opacity: 0.8; 
+}
+.main-footer p{
+    background-color: rgb(0, 16, 59) ;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+/**footer end**/
