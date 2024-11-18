@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2d311668-88de-44bd-a4fc-91fe871fa12f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CSS/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CSS/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-grid.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-grid.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-reboot.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-reboot.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-utilities.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-utilities.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-utilities.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-utilities.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-utilities.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.esm.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.esm.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2ozJUaPj9nun27Z0psTMEN0RqNs" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "profile",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d311668-88de-44bd-a4fc-91fe871fa12f" name="Changes" comment="" />
+      <created>1731866486903</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731866486903</updated>
+      <workItem from="1731866488360" duration="821000" />
+      <workItem from="1731867848590" duration="2739000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
