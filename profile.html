@@ -1,60 +1,46 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الملف الشخصي</title>
     <link rel="stylesheet" href="Assets\CSS\profile.css">
 </head>
 <body>
-<!-- شريط التنقل -->
-<nav class="navbar">
-    <div class="logo">شعار الموقع</div>
-    <ul class="nav-links">
-        <li><a href="#">الألعاب</a></li>
-        <li><a href="#">الكتب</a></li>
-        <li><a href="#">الإكسسوارات</a></li>
-    </ul>
-    <div class="icons">
-        <span class="icon">🔔</span>
-        <span class="icon">🛒</span>
-        <span class="icon">🔍</span>
-    </div>
-</nav>
-
-<!-- القسم الشخصي -->
-<div class="profile-section">
-    <div class="user-info">
-        <img src="user-avatar.png" alt="صورة المستخدم" class="user-avatar">
-        <h1>Arwa Fahim</h1>
-
-    </div>
-    <div class="tabs">
-        <button>النشاطات</button>
-        <button>مراجعاتي</button>
-        <button>اقتباساتي</button>
-    </div>
-</div>
-
-<!-- جدول الأنشطة -->
-<table class="activity-table">
-    <thead>
-    <tr>
-        <th>نشاطاتي</th>
-        <th>اقتراحاتي</th>
-        <th>يتابعونني</th>
-        <th>أتابعهم</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-    </tr>
-    </tbody>
-</table>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">مكتبة الكتب</div>
+            <input type="text" class="search-bar" placeholder="عنوان الكتاب، المؤلف، دار النشر...">
+            <div class="icons">
+                <span class="icon">🏠</span>
+                <span class="icon">🛒</span>
+                <span class="icon">🔔</span>
+                <span class="icon">👤</span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="profile-container">
+            <aside class="sidebar">
+                <button class="tab">الملف الشخصي</button>
+            </aside>
+            <section class="profile-details">
+                <div class="user-info">
+                    <img src="user-avatar.png" alt="الصورة الشخصية" class="avatar">
+                    <h2>name</h2>
+                    <p>عضو منذ يوم <span>⏰</span></p>
+                </div>
+                <div class="stats">
+                    <div>0 <br> متابعون</div>
+                    <div>0 <br> يتابعوني</div>
+                    <div>0 <br> اقتباساتي</div>
+                    <div>0 <br> مراجعاتي</div>
+                </div>
+                <div class="no-activity">
+                    <p>⚠️ لا يوجد نشاطات بعد</p>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
