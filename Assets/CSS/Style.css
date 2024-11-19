@@ -265,13 +265,11 @@ form.d-flex button:hover{
     text-decoration: none;
     font-family: var(--font-primary);
     color: var(--black);
-    cursor: pointer;
     margin: 0 10px; 
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-    font-weight: 600;
     font-size: 1.1rem;
     padding: 10px 0;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
+    border-radius: 2rem;
 }
 
 
@@ -382,22 +380,27 @@ form.d-flex button:hover{
 
 /* Social Links */
 .social-linkes-container {
-    margin-bottom: 2rem;
     display: flex;
     justify-content: center;
-    gap: 3rem; 
-    flex-wrap: wrap;
 }
 
-.social-linkes-container i {
+.social-linkes-container i{
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--white);
+    border-radius: 50%;
+    margin: 2rem;
+}
+
+.social-linkes-container i{
     font-size: 2rem;
-    color: var(--white); 
+    color: var(--navy-blue); 
     transition: color 0.2s ease, transform 0.2s ease; 
 }
 
 .social-linkes-container i:hover {
     color: var(--beige); 
-    transform: scale(1.2); 
+    transform: scale(1.1); 
 }
 
 /* footer links */
