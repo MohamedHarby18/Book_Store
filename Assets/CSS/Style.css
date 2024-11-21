@@ -110,6 +110,7 @@ header h1 {
     text-align: center;
     font-size: 50px; 
     color: #000; 
+    
 }
 
 /* nav start */
@@ -171,12 +172,7 @@ form.d-flex .btn {
 
 form.d-flex .form-control:focus {
     box-shadow: 0 0 10px rgba(1, 79, 134, 0.5); 
-    border-color: rgba(0, 123, 255, 0.5);
-}
-
-
-form.d-flex button:hover {
-    background-color: var(--light-blue);
+    border-color: rgba(1, 42, 74, 0.5);
 }
 
 /* search form end */
@@ -376,7 +372,7 @@ form.d-flex button:hover {
 
 .books-mini-view a {
     text-decoration: none;
-    color: var(--black);
+    color: var(--black) !important;
 }
 
 .card-img-top {
@@ -391,19 +387,27 @@ form.d-flex button:hover {
     transform: scale(1.05);
 }
 
-.btn-book-card{
+.btn-book-card {
+    color: var(--white) !important;
     margin-bottom: 2rem;
     margin-top: 2rem;
     background-color: var(--beige) !important;
-    border: var(--light-bg) !important;
+    border: 2px solid var(--light-bg) !important; 
     font-family: var(--font-primary) !important;
+    padding: 12px 24px; 
+    border-radius: 30px; 
+    font-size: 16px; 
+    text-align: center; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
 }
-.btn-book-card:hover{
-    background-color: var(--light-bg) !important;
-    border: var(--beige) !important;
-    transform: translateY(-4px) !important;
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+
+
+.btn-book-card:hover {
+    background-color: var(--blue) !important; 
+    color: var(--beige) !important; 
+    transform: translateY(-4px); 
 }
+
 
 .Recently-added h1 {
     display: flex;
