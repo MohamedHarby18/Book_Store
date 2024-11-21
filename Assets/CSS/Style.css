@@ -20,9 +20,11 @@
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.05);
     }
+
     100% {
         transform: scale(1);
     }
@@ -32,6 +34,7 @@
     0% {
         text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
     }
+
     100% {
         text-shadow: 0 0 15px rgba(255, 255, 255, 1);
     }
@@ -41,26 +44,35 @@
     0% {
         transform: translateX(-100%);
     }
+
     100% {
         transform: translateX(0);
     }
 }
+
 @keyframes colorChange {
     0% {
-        color: var(--white); /* Start with white */
+        color: var(--white);
+        /* Start with white */
     }
+
     50% {
-        color: var(--light-bg); /* Midway color */
+        color: var(--light-bg);
+        /* Midway color */
     }
+
     100% {
-        color: var(--white); /* Final color */
+        color: var(--white);
+        /* Final color */
     }
 }
+
 @keyframes fadeInScale {
     0% {
         opacity: 0;
         transform: scale(0.8);
     }
+
     100% {
         opacity: 1;
         transform: scale(1);
@@ -79,21 +91,23 @@
     opacity: 1;
     transform: scale(1);
 }
+
 /*******************************************************************************/
 
 header {
     width: 100%;
     height: 80px;
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header h1 {
     text-align: center;
-    font-size: 50px; 
-    color: #000; 
+    font-size: 50px;
+    color: #000;
 }
+
 /* nav start */
 .navbar {
     padding: 0.5rem 1rem;
@@ -101,15 +115,16 @@ header h1 {
 
 .nav-link {
     font-weight: 500 !important;
-    font-size: 16px !important; 
+    font-size: 16px !important;
     font-family: var(--font-primary) !important;
     color: var(--black) !important;
     text-decoration: none !important;
+    transition: color 0.2s ease, transform 0.2s ease !important;
 }
 
 .nav-link:hover {
-    color:var(--white) !important;
-    text-decoration:none !important;
+    color: var(--white) !important;
+    text-decoration: none !important;
     background-color: var(--blue) !important;
     border-radius: 50px !important;
     transform: translateY(-4px) !important;
@@ -128,6 +143,7 @@ header h1 {
 .Login-button:hover {
     background-color: var(--light-blue);
 }
+
 /* search form start */
 form.d-flex .form-control {
     border-radius: 50px;
@@ -143,28 +159,37 @@ form.d-flex .btn {
     text-decoration: none;
 }
 
-form.d-flex button:hover{
+form.d-flex button:hover {
     background-color: var(--light-blue);
 }
+
 /* search form end */
 /* icons start */
 .navbar .container-fluid .navbar-brand img,
 .navbar .container-fluid .navbar-brand svg {
     width: 40px;
-    border-radius: 8px; 
+    border-radius: 8px;
 }
 
-.navbar .container-fluid .collapse img,
-.navbar .container-fluid .collapse svg {
-    width: 30px;
+/* Style for the cart icon */
+.navbar .container-fluid .collapse .fa-solid {
     margin-left: 90px;
+    font-size: 25px;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.navbar .container-fluid .collapse .fa-solid:hover{
+    color: var(--light-blue);
+
 }
 /* icons start */
 /* nav end */
 /* Main Section After nav bar start */
 /*background*/
 #nx-nav {
-    background-image: url(/Assets/imgs/section\ backgroound.jpg); /* Fix image path */
+    background-image: url(/Assets/imgs/section\ backgroound.jpg);
+    /* Fix image path */
     padding-top: 7rem;
     padding-bottom: 13rem;
     position: relative;
@@ -194,15 +219,17 @@ form.d-flex button:hover{
     justify-content: center;
     align-items: center;
 }
+
 /*text in the section*/
 .nx-nav-row h1 {
-    font-family: var(--font-heading) !important; 
+    font-family: var(--font-heading) !important;
     font-size: 7rem !important;
     font-weight: 300 !important;
     animation: glow 1.5s ease-in-out infinite alternate, fadeInScale 2s ease-out forwards, colorChange 3s ease-in-out infinite alternate;
 }
-.nx-nav-row p{
-    font-family: var(--font-secondary) !important; 
+
+.nx-nav-row p {
+    font-family: var(--font-secondary) !important;
     font-size: 1.5rem !important;
     font-weight: 600 !important;
 }
@@ -237,13 +264,16 @@ form.d-flex button:hover{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transform: translateY(-4px);
     color: var(--light-bg) !important;
-    animation: pulse 1s infinite; /* pulse effect on hover */
+    animation: pulse 1s infinite;
+    /* pulse effect on hover */
 }
 
 .btn-main:focus {
-    outline: 4px solid var(--light-blue); /* Enhanced focus outline */
+    outline: 4px solid var(--light-blue);
+    /* Enhanced focus outline */
     outline-offset: 2px;
-    background-color: var(--navy-blue); /* Optional background change on focus */
+    background-color: var(--navy-blue);
+    /* Optional background change on focus */
 }
 
 .btn-main:active {
@@ -264,25 +294,23 @@ form.d-flex button:hover{
     text-decoration: none;
     font-family: var(--font-primary);
     color: var(--black);
-    cursor: pointer;
-    margin: 0 10px; 
+    margin: 0 10px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-    font-weight: 600;
     font-size: 1.1rem;
     padding: 10px 0;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
+    border-radius: 2rem;
 }
 
 
 .ex-col:hover {
-    color: var(--primary-color);  
+    color: var(--primary-color);
 }
 
 /* Responsiveness */
 @media (max-width: 768px) {
     .ex-col {
-        font-size: 1rem;  
-        padding: 8px 0;   
+        font-size: 1rem;
+        padding: 8px 0;
     }
 }
 
@@ -290,85 +318,127 @@ form.d-flex button:hover{
 .ex-col:hover {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
 }
+
 /*****************************************************************************************/
 /**books mini view decoration start**/
-.best-seller h1{
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    text-align: center !important; 
+.best-seller h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
     margin-top: 3rem;
     margin-bottom: 3rem;
     font-family: var(--font-heading);
     font-size: 4rem !important;
-    width: 100%; 
-    
+    width: 100%;
+
 }
-.books-mini-view{
+
+.books-mini-view {
     display: flex;
     gap: 3rem;
     justify-content: center;
     flex-wrap: wrap;
 }
-.books-mini-view a{
+
+.books-mini-view a {
     text-decoration: none;
     color: var(--black);
 }
+
 .card-img-top {
-    width: 100%; 
+    width: 100%;
     height: 20rem;
-    object-fit: cover; 
-    overflow: hidden; 
+    object-fit: cover;
+    overflow: hidden;
     transition: transform 0.3s ease;
 }
 
 .card-img-top:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
-.btn-book-card{
+.btn-book-card {
     margin-bottom: 2rem;
     margin-top: 2rem;
     background-color: var(--beige) !important;
     border: var(--light-bg) !important;
     font-family: var(--font-primary) !important;
 }
-.btn-book-card:hover{
+
+.btn-book-card:hover {
     background-color: var(--light-bg) !important;
     border: var(--beige) !important;
     transform: translateY(-4px) !important;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+.Recently-added h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-family: var(--font-heading);
+    font-size: 4rem !important;
+    width: 100%;
+
+}
+
+.Deal-of-the-day h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-family: var(--font-heading);
+    font-size: 4rem !important;
+    width: 100%;
+}
+
+.card-text {
+    font-size: x-small;
+}
+
+.card-title {
+    font-size: small;
+}
+
 /**books mini view decoration end**/
 /*******************************************************************************************************************************/
 /**footer start**/
 .main-footer {
-    background-color: var(--navy-blue); 
-    color: var(--white); 
-    padding-top: 6rem;
+    background-color: var(--navy-blue);
+    color: var(--white);
+    padding-top: 4rem;
     text-align: center;
-    bottom: 0;
-    margin-bottom: 0;
 }
 
 /* Social Links */
 .social-linkes-container {
-    margin-bottom: 3rem;
     display: flex;
     justify-content: center;
-    gap: 5rem; 
-    flex-wrap: wrap;
+}
+
+.social-linkes-container i {
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--white);
+    border-radius: 50%;
+    margin: 2rem;
 }
 
 .social-linkes-container i {
     font-size: 2rem;
-    color: var(--white); 
-    transition: color 0.3s ease, transform 0.3s ease; 
+    color: var(--navy-blue);
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .social-linkes-container i:hover {
-    color: var(--beige); 
-    transform: scale(1.2); 
+    color: var(--beige);
+    transform: scale(1.1);
 }
 
 /* footer links */
@@ -376,21 +446,21 @@ form.d-flex button:hover{
     list-style: none;
     padding: 0;
     margin: 10px 0;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     display: flex;
     justify-content: center;
-    gap: 5rem; 
+    gap: 4rem;
     flex-wrap: wrap;
 }
 
 .footer-ul-container .footer-item {
     text-decoration: none;
     color: var(--white);
-    transition: color 0.3s ease, transform 0.3s ease; 
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .footer-ul-container .footer-item:hover {
-    color: var(--beige); 
+    color: var(--beige);
 }
 
 /* store name and copy right */
@@ -398,11 +468,13 @@ form.d-flex button:hover{
     margin-top: 2rem;
     font-size: 14px;
     color: var(--white);
-    opacity: 0.8; 
+    opacity: 0.8;
 }
-.main-footer p{
-    background-color: rgb(0, 16, 59) ;
+
+.main-footer p {
+    background-color: rgb(0, 16, 59);
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
 }
+
 /**footer end**/
