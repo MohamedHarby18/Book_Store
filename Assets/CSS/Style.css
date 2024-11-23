@@ -141,7 +141,7 @@ header h1 {
 
 .Login-button {
     font-family: var(--font-primary);
-    background-color: var(--blue) !important;
+    background-color: var(--blue) ;
     color: var(--white);
     font-size: 15px;
     padding: 8px 20px;
