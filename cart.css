@@ -4,6 +4,12 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.form.d-flex{
+    float: right !important;
+    justify-content: right !important;
+}
+
 .container {
     width: 80%;
     height: fit-content;
@@ -14,6 +20,7 @@ body {
 
 .container h1{
     margin-bottom: 20px;
+    position: statics;
 }
 
 header {
