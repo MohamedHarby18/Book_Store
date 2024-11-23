@@ -22,11 +22,11 @@
 
 <body>
   <!-- start nav bar -->
-  <nav class="navbar navbar-expand-lg position-sticky">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top main-menu">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="Assets/imgs/Next Chapter logo.jpg"></a>
       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" maxlength="20">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
       <div class="collapse navbar-collapse">
@@ -38,13 +38,13 @@
             <a class="nav-link" href="#">Books</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Srvice</a>
+            <a class="nav-link" href="#slides-Services">Service</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Profile</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About us</a>
+            <a class="nav-link" href="#About-Us-Container">About us</a>
           </li>
         </ul>
         <a href="#" class="Login-button position-absolute top-50 start-0 translate-middle-y">
@@ -63,7 +63,7 @@
         <h1 class="display-4">Next Chapter</h1>
         <p>Your Journey Begins with a Book</p>
         <form class="d-flex" role="search">
-          <input class="form-control me-2 search-in-main" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control me-2 search-in-main" type="search" placeholder="Search" aria-label="Search" maxlength="20">
           <button class="btn btn-outline-success bn-search-in-main" type="submit">Search</button>
         </form>
         <div class="nx-nav-col btn-container">
@@ -230,7 +230,7 @@
 
     <h1>Deal of the day</h1>
 
-    <div class="books-mini-view row justify-content-center g-3 p-3">
+    <div class="books-mini-view row justify-content-center g-3 p-3" >
       <div class="card col-md-4 scroll-animate" style="width: 18rem;"> <a href="">
           <img src="Assets/imgs/islamic/img22.jpeg" class="card-img-top" alt="إن ربي لطيف">
           <div class="card-body">
@@ -295,6 +295,145 @@
       </div>
     </div>
   </div>
+  <!--Slider here-->
+  <div class="slides-Services" id="slides-Services">
+    <h1>Our Services</h1>
+    <div 
+      id="carouselExampleCaptions" 
+      class="carousel slide" 
+      data-bs-ride="carousel" 
+      data-bs-interval="1700">
+      
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+  
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Assets/imgs/slides/slide1.png" style="height: 40rem;" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Variety In Books</h4>
+            <p>You will find what you are looking for here.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Assets/imgs/slides/slide2.png" style="height: 40rem;" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Fast Delivery On Orders Over</h4>
+            <p>We only take few days to get your order wherever you want.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Assets/imgs/slides/slide3.png" style="height: 40rem;" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>E-Book</h4>
+            <p>we offer you a virtual copy of your favourite book to enjoy it everywhere.</p>
+          </div>
+        </div>
+      </div>
+  
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!--Slider here ends-->
+ <!-- About Us Section Start -->
+<div class="responsive-container-block About-Us-Container" id="About-Us-Container">
+  <div class="responsive-container-block Container">
+    <p class="text-blk heading">
+      About Us
+    </p>
+    <p class="text-blk subHeading">
+      Welcome to Next Chapter, where stories come alive and knowledge knows no bounds! Our bookstore is more than just a place to buy
+       books—it's a haven for book lovers, a sanctuary for curious minds, and a gateway to countless adventures. We pride ourselves on
+        offering a diverse collection of books across genres, from timeless classics to modern bestsellers, inspirational self-help, 
+        captivating novels, and engaging children’s literature. Whether you’re seeking to explore new ideas, spark your imagination,
+         or find the perfect gift for a loved one, we’re here to make your literary journey unforgettable. At Next Chapter,
+          every page holds a new possibility.
+    </p>
+    <div class="social-icons-container">
+      <a href="#" class="social-icon" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="#" class="social-icon" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="social-icon" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="social-icon" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- About Us Section End -->
+ <!--Customer reviwe start-->
+<div class="container py-5">
+  <div class="text-center mb-5">
+    <h4 class="font-cond-l text-primary mb-3">Not Yet Convinced ?</h4>
+    <h1 class="font-cond-b text-dark">Read Customer Reviews</h1>
+  </div>
+
+  <!-- Reviews Carousel -->
+  <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Review 1 -->
+      <div class="carousel-item active">
+        <div class="row justify-content-center">
+          <div class="col-md-4 text-center">
+            <img src="Assets/imgs/customer1.png" class="w-50 rounded-circle mb-3" alt="Martha Stewart">
+            <p class="font-cond-l fs-5">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae."</p>
+            <h5 class="font-cond text-dark">Mesh 7eml</h5>
+            <small class="font-cond text-muted">Basha El Balad - KFC</small>
+          </div>
+        </div>
+      </div>
+      <!-- Review 2 -->
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-4 text-center">
+            <img src="Assets/imgs/customer2.png" class="w-50 rounded-circle mb-3" alt="Ariana Menage">
+            <p class="font-cond-l fs-5">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae."</p>
+            <h5 class="font-cond text-dark">El Usta 3bdo</h5>
+            <small class="font-cond text-muted">Saba7o - Good morning everyboding</small>
+          </div>
+        </div>
+      </div>
+      <!-- Review 3 -->
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-4 text-center">
+            <img src="Assets/imgs/customer3.jpg" class="w-50 rounded-circle mb-3" alt="Sean Carter">
+            <p class="font-cond-l fs-5">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."</p>
+            <h5 class="font-cond text-dark">Nasser El Desoky</h5>
+            <small class="font-cond text-muted">Number 1 - El Ustora</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<!-- End Customer Review Section -->
+
+
   <!--Recently added section end-->
   <!--footer-->
   <footer class="main-footer">

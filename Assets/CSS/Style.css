@@ -3,7 +3,7 @@
 :root {
     --blue: rgb(1, 79, 134);
     --navy-blue: rgb(1, 42, 74);
-    --light-blue: rgb(97, 165, 194);
+    --light-blue: #61a5c2;
     --black: rgb(0, 0, 0);
     --white: rgb(255, 255, 255);
     --light-bg: rgb(214, 204, 194);
@@ -94,6 +94,10 @@
 
 /*******************************************************************************/
 
+body{
+    background-color: #e3e6e9 !important
+}
+
 header {
     width: 100%;
     height: 80px;
@@ -104,20 +108,25 @@ header {
 
 header h1 {
     text-align: center;
-    font-size: 50px;
-    color: #000;
+    font-size: 50px; 
+    color: #000; 
+    
 }
 
 /* nav start */
 .navbar {
-    padding: 0.5rem 1rem;
+    padding: 1.1rem 1rem !important;
+    z-index: 1050 !important;
+    background-color: rgba(226, 214, 202, 0.9)  !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
+
 
 .nav-link {
     font-weight: 500 !important;
     font-size: 16px !important;
     font-family: var(--font-primary) !important;
-    color: var(--black) !important;
+    color: var(--navy-blue) !important;
     text-decoration: none !important;
     transition: color 0.2s ease, transform 0.2s ease !important;
 }
@@ -131,11 +140,12 @@ header h1 {
 }
 
 .Login-button {
+    font-family: var(--font-primary) ;
     background-color: var(--blue);
     color: var(--white);
-    font-size: 12px;
+    font-size: 15px;
     padding: 8px 20px;
-    margin-left: 8px;
+    margin-left: 20px;
     border-radius: 50px;
     text-decoration: none;
 }
@@ -152,15 +162,17 @@ form.d-flex .form-control {
 form.d-flex .btn {
     background-color: var(--blue);
     color: var(--white);
-    font-size: 12px;
+    font-size: 15px;
+    font-family: var(--font-primary);
     padding: 8px 12px;
     margin-left: 8px;
     border-radius: 50px;
     text-decoration: none;
 }
 
-form.d-flex button:hover {
-    background-color: var(--light-blue);
+form.d-flex .form-control:focus {
+    box-shadow: 0 0 10px rgba(1, 79, 134, 0.5); 
+    border-color: rgba(1, 42, 74, 0.5);
 }
 
 /* search form end */
@@ -183,6 +195,23 @@ form.d-flex button:hover {
     color: var(--light-blue);
 
 }
+/* Style for the cart icon */
+.navbar .container-fluid .collapse .fa-solid {
+    margin-left: 120px;
+    font-size: 25px;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.navbar .container-fluid .collapse .fa-solid:hover{
+    color: var(--light-blue);
+
+}
+.navbar-brand img{
+    height: 55px;
+    width: 55px !important;
+}
+/* icons start */
 /* icons start */
 /* nav end */
 /* Main Section After nav bar start */
@@ -343,7 +372,7 @@ form.d-flex button:hover {
 
 .books-mini-view a {
     text-decoration: none;
-    color: var(--black);
+    color: var(--black) !important;
 }
 
 .card-img-top {
@@ -359,19 +388,26 @@ form.d-flex button:hover {
 }
 
 .btn-book-card {
+    color: var(--white) !important;
     margin-bottom: 2rem;
     margin-top: 2rem;
     background-color: var(--beige) !important;
-    border: var(--light-bg) !important;
+    border: 2px solid var(--light-bg) !important; 
     font-family: var(--font-primary) !important;
+    padding: 12px 24px; 
+    border-radius: 30px; 
+    font-size: 16px; 
+    text-align: center; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
 }
 
+
 .btn-book-card:hover {
-    background-color: var(--light-bg) !important;
-    border: var(--beige) !important;
-    transform: translateY(-4px) !important;
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--blue) !important; 
+    color: var(--beige) !important; 
+    transform: translateY(-4px); 
 }
+
 
 .Recently-added h1 {
     display: flex;
@@ -407,7 +443,135 @@ form.d-flex button:hover {
 }
 
 /**books mini view decoration end**/
+/**Slider Start**/
+.slides-Services h1{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center !important; 
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-family: var(--font-heading);
+    font-size: 4rem !important;
+    width: 100%; 
+
+}
+.slides-Services h4{
+    font-size: 4rem !important;
+    -webkit-text-stroke: 1px var(--navy-blue);
+}
+.slides-Services img{
+    object-fit: cover;
+}
+/**Slider ends**/
+/******************************************************************************************************/
+/** About Us Section Start **/
+/* General Styling */
+.responsive-container-block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.About-Us-Container {
+    margin-top: 4rem; 
+    margin-bottom: 4rem; 
+    padding: 2rem;
+    background: url("/Assets/imgs/About-Us.png") no-repeat center center / cover;
+    min-height: 37.5rem; 
+}
+
+.Container {
+    max-width: 50rem; 
+    width: 90%;
+    padding: 2rem; 
+    background-color: white;
+    border-radius: 0.7rem; 
+    box-shadow: 0 0.3rem 0.7rem rgba(0, 0, 0, 0.1); 
+    text-align: center;
+}
+
+.text-blk {
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    font-family: var(--font-heading);
+    font-size: 2.3rem; 
+    line-height: 2.9rem; 
+    font-weight: 300;
+    color: var(--black);
+    margin-bottom: 1.3rem; 
+}
+
+.subHeading {
+    font-family: var(--font-primary);
+    font-size: 1.2rem; 
+    line-height: 1.7rem; 
+    color: var(--navy-blue);
+    margin-bottom: 2.5rem; 
+    line-height: 3rem;
+}
+
+.social-icons-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.4rem;
+}
+
+.social-icon {
+    font-size: 3rem; 
+    padding: 0.7rem; 
+    color: var(--black);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--beige);
+    transform: scale(1.1);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) { 
+    .heading {
+        font-size: 1.9rem; 
+        line-height: 2.5rem; 
+    }
+
+    .subHeading {
+        font-size: 1rem; 
+        line-height: 1.5rem; 
+    }
+
+    .social-icon {
+        font-size: 1.5rem; 
+    }
+}
+
+@media (max-width: 500px) { 
+    .Container {
+        padding: 1rem; 
+    }
+
+    .heading {
+        font-size: 1.5rem; 
+        line-height: 2rem; 
+    }
+
+    .subHeading {
+        font-size: 1rem; 
+        line-height: 1.5rem; 
+    }
+}
+/** About Us Section End **/
+
 /*******************************************************************************************************************************/
+/**Coustomer reviwe**/
+
 /**footer start**/
 .main-footer {
     background-color: var(--navy-blue);
