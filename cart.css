@@ -13,49 +13,54 @@ body {
     text-align: center;
 }
 
-.container h1{
+.container h1 {
     margin-bottom: 20px;
     position: statics;
 }
 
-header {
+header h1 {
     background: #d4d4d4;
     color: #000000;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #77aaff 3px solid;
-    font-family: fantasy;
+    font-family: var(--font-heading);
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
 }
-header a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
+
 .cart {
     margin: 20px 0;
 }
+
 .cart table {
     width: 100%;
     border-collapse: collapse;
 }
-.cart table, th, td {
+
+.cart table,
+th,
+td {
     border: 1px solid #ddd;
+    direction: ltr;
 }
-.cart th, .cart td {
+
+.cart th,
+.cart td {
     padding: 10px;
     text-align: left;
 }
+
 .cart th {
     background-color: #f2f2f2;
 }
+
 .total {
     text-align: right;
     margin-top: 20px;
 }
-.items{
+
+.items {
     color: #000000;
-    background-color:rgb(234, 234, 234);
+    background-color: rgb(234, 234, 234);
     margin: auto;
     width: fit-content;
     border-radius: 20px;
@@ -63,6 +68,7 @@ header a {
     text-align: center;
     border: #000000;
 }
+
 .image {
     height: 20rem;
     object-fit: cover;
@@ -71,18 +77,21 @@ header a {
     border: #000000 2px;
     text-align: center;
 }
-.image :hover{
-    transform: scale(1.05); 
+
+.image :hover {
+    transform: scale(1.05);
 }
 
-.num{
+.num {
     padding: 10px;
     background-color: rgb(170, 170, 170);
     position: static;
     width: fit-content;
     margin-inline-start: 1065px;
     border-radius: 30px;
+    direction: ltr;
 }
+
 .checkout {
     background-color: rgb(0, 0, 0);
     color: black;
@@ -90,15 +99,17 @@ header a {
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-   margin-bottom: 20px;
+    margin-bottom: 20px;
     border-radius: 30px;
     font-family: fantasy;
 }
-.checkout :hover{
+
+.checkout :hover {
     transform: scale(0.9);
 }
-.clear :link , :visited{
-    
+
+.clear :link,
+:visited {
     background-color: rgb(28, 122, 0);
     color: black;
     border: 2px solid rgb(255, 0, 0);
@@ -108,11 +119,15 @@ header a {
     display: inline;
     margin-bottom: 10px;
     border-radius: 30px;
-    font-family: fantasy;
+    font-family: var(--font-primary);
+    direction: ltr;
 }
 
-.clear :hover{
+.clear :hover {
     background-color: rgb(255, 0, 0);
     color: white;
 }
-tr:hover {background-color: coral;}
+
+tr:hover {
+    background-color: coral;
+}
