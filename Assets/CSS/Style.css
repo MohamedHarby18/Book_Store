@@ -141,7 +141,7 @@ header h1 {
 
 .Login-button {
     font-family: var(--font-primary);
-    background-color: var(--blue);
+    background-color: var(--blue) !important;
     color: var(--white);
     font-size: 15px;
     padding: 8px 20px;
@@ -652,6 +652,29 @@ form.d-flex .form-control:focus {
 
 /***********************************************************************************************************/
 /*********************************************** (cart CSS) ************************************************/
+
+.container {
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    position: statics;
+}
+
+header h1 {
+    background: #d4d4d4;
+    color: #000000;
+    font-family: var(--font-heading);
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
 .cart {
     margin: 20px 0;
 }
@@ -665,6 +688,7 @@ form.d-flex .form-control:focus {
 th,
 td {
     border: 1px solid #ddd;
+    direction: ltr;
 }
 
 .cart th,
@@ -713,6 +737,7 @@ td {
     width: fit-content;
     margin-inline-start: 1065px;
     border-radius: 30px;
+    direction: ltr;
 }
 
 .checkout {
@@ -733,7 +758,6 @@ td {
 
 .clear :link,
 :visited {
-
     background-color: rgb(28, 122, 0);
     color: black;
     border: 2px solid rgb(255, 0, 0);
@@ -743,7 +767,8 @@ td {
     display: inline;
     margin-bottom: 10px;
     border-radius: 30px;
-    font-family: fantasy;
+    font-family: var(--font-primary);
+    direction: ltr;
 }
 
 .clear :hover {
