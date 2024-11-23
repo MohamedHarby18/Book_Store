@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="cart.css">
-<<<<<<< Updated upstream
   <link rel="stylesheet" href="Assets/CSS/Style.css">
-  
+  <link rel="stylesheet" href="Assets/CSS/color-font.css">
+  <!--some icon may not work-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+  <!-- add bootstrap -->
+  <link rel="stylesheet" href="Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top main-menu">
+  <!-- start nav bar -->
+  <nav class="navbar navbar-expand-lg position-sticky">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="Assets/imgs/Next Chapter logo.jpg"></a>
       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" maxlength="20">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
       <div class="collapse navbar-collapse">
@@ -26,13 +35,13 @@
             <a class="nav-link" href="#">Books</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#slides-Services">Srvice</a>
+            <a class="nav-link" href="#">Srvice</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Profile</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#About-Us-Container">About us</a>
+            <a class="nav-link" href="#">About us</a>
           </li>
         </ul>
         <a href="#" class="Login-button position-absolute top-50 start-0 translate-middle-y">
@@ -42,59 +51,80 @@
       </div>
     </div>
   </nav>
-=======
-  
-</head>
-<body>
->>>>>>> Stashed changes
+  <!-- end nav bar -->
   <header>
     <div class="container">
-        <h1>Shopping Cart</h1>
-    </header>
-    </div>
-<h2 class="items">Items:</h2>
-<div class="image">
-<a href="#">
-<img src="Assets/imgs/human_development/img14.jpeg">
-</a>
-</div>
-<div class="num" style="text-align: right;">
-  <legend style="font-size: larger; font-family: fantasy; text-align: start;">amount :</legend>
-<input type="number" style="padding: 10px;">
-<a style="background-color:rgb(255, 48, 48); padding: 10px 0px; text-decoration: dashed; color: aliceblue; font-family: fantasy; border-radius:20px" href="#">delete</a>
-<a style="background-color: rgb(255, 112, 46); padding: 10px 0px; text-decoration: dashed; color: aliceblue;font-family: fantasy;border-radius:20px ;" href="#">update</a>
-</div>
-<div class="container">
+      <h1>Shopping Cart</h1>
+  </header>
+  </div>
+  <h2 class="items">Items:</h2>
+  <div class="image">
+    <a href="#">
+      <img src="Assets/imgs/human_development/img14.jpeg">
+    </a>
+  </div>
+  <div class="num" style="text-align: right;">
+    <legend style="font-size: larger; font-family: fantasy; text-align: start;">amount :</legend>
+    <input type="number" style="padding: 10px;">
+    <a style="background-color:rgb(255, 48, 48); padding: 10px 0px; text-decoration: dashed; color: aliceblue; font-family: fantasy; border-radius:20px"
+      href="#">delete</a>
+    <a style="background-color: rgb(255, 112, 46); padding: 10px 0px; text-decoration: dashed; color: aliceblue;font-family: fantasy;border-radius:20px ;"
+      href="#">update</a>
+  </div>
+  <div class="container">
     <div class="cart">
-        <table>
-            <tr>
-                <th>Discounts</th>
-            </tr>
-            <tr>
-                <td>total before discount</td>
-                <td>1</td>
-                <td>$20.00</td>
-            </tr>
-            <tr>
-                <td>total after discount</td>
-                <td>1</td>
-                <td>$15.00</td>
-            </tr>
-        </table>
-        <div class="total">
-            <h3>Total: $15.00</h3>
-        </div>
+      <table>
+        <tr>
+          <th>Discounts</th>
+        </tr>
+        <tr>
+          <td>total before discount</td>
+          <td>1</td>
+          <td>$20.00</td>
+        </tr>
+        <tr>
+          <td>total after discount</td>
+          <td>1</td>
+          <td>$15.00</td>
+        </tr>
+      </table>
+      <div class="total">
+        <h3>Total: $15.00</h3>
+      </div>
     </div>
-</div>
-<div class="clear">
-  <a style="color: whitesmoke; display: inline-block;" href="cart.html">
-    Clear all
-  </a>
-</div>
-<div class="checkout">
-  <a style="color: aliceblue;" href="#">
-<h1 style="border: 3px black;">Check out</h1>
-  </a>
-</div>
+  </div>
+  <div class="clear">
+    <a style="color: whitesmoke; display: inline-block;" href="cart.html">
+      Clear all
+    </a>
+  </div>
+  <div class="checkout">
+    <a style="color: aliceblue;" href="#">
+      <h1 style="border: 3px black;">Check out</h1>
+    </a>
+  </div>
+  <!--footer-->
+  <footer class="main-footer">
+    <div class="social-linkes-container">
+      <i class="fab fa-github"></i>
+      <i class="fab fa-discord"></i>
+      <i class="fab fa-paypal"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+    <ul class="footer-ul-container">
+      <li class=""><a href="#" class="footer-item">Home</a></li>
+      <li class=""><a href="#" class="footer-item">Pricing</a></li>
+      <li class=""><a href="#" class="footer-item">FAQs</a></li>
+      <li class=""><a href="#" class="footer-item">About</a></li>
+      <li class=""><a href="#" class="footer-item">Features</a></li>
+    </ul>
+    <p class="footer-company">© 2024 Next Chapter, Inc</p>
+  </footer>
+  <!-- JS Link Sheet -->
+  <script src="Assets/js/main.js"></script>
+  <!-- bootstrap JS Link Sheet -->
+  <script src="Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+  <script src="Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
