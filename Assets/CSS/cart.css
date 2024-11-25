@@ -41,7 +41,7 @@ header h1 {
     background: #d4d4d4;
     color: #000000;
     font-family: var(--font-heading);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding: 10px;
 }
 
@@ -202,7 +202,7 @@ table tr:last-child td {
     background-color: rgb(170, 170, 170);
     position: static;
     width: fit-content;
-    margin-inline-start: 1065px;
+    margin-inline-end: 108px;
     border-radius: 30px;
     direction: ltr;
 }
@@ -223,7 +223,7 @@ table tr:last-child td {
     font-size: 24px;
     display: inline-block;
     margin: 0;
-    background-color: var(--red);
+    background-color: var(--black);
     color: var(--white);
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -235,7 +235,7 @@ table tr:last-child td {
 
 .clear {
     text-align: left;
-    margin-left: 55px;
+    margin-left: 110px;
 }
 
 .clear-link {
@@ -262,4 +262,70 @@ table tr:last-child td {
 
 tr:hover {
     background-color: coral;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    direction: ltr;
+}
+
+input[type=submit] {
+    background-color: var(--navy-blue);
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    direction: ltr;
+}
+
+input[type=submit]:hover {
+    background-color: var(--navy-blue);
+}
+
+.form_container {
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    direction: ltr;
+}
+
+.payment {
+    direction: ltr;
+    padding: 30px;
+    width: 100%;
+    
+   
+}
+.payment input{
+    margin: 20px 0px;
+    font-size: larger;
+    background-color: var(--navy-blue);
+}
+.payment i{
+    font-size: 25px; 
+    
+}
+
+   
+.method{
+  width: 100%;
+  border-left: 5px solid var(--light-blue);
+  background-color: var(--light-bg);
+
+}
+.icon_method{
+    gap: 1.4rem;
+    display: flex;
+    align-items: center;  
 }
