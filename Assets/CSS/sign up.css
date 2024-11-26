@@ -4,9 +4,128 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+
+
+
+/* nav start */
+.navbar {
+    width: 100% !important;
+    padding: 1.1rem 1rem !important;
+    z-index: 1050 !important;
+    background-color: rgba(226, 214, 202, 0.9)  !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.container-fluid {
+    padding: 0;
+    flex-direction: row-reverse;
+}
+
+/* Additional container styles if needed */
+
+.nav-link {
+    font-weight: 500 !important;
+    font-size:1em !important;
+    font-family: var(--font-primary) !important;
+    color: var(--navy-blue) !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease, transform 0.2s ease !important;
+    margin: 1em 1.2em !important;
+
+}
+
+.nav-link:hover {
+    color: var(--white) !important;
+    text-decoration: none !important;
+    background-color: var(--blue) !important;
+    border-radius: 50px !important;
+    transform: translateY(-4px) !important;
+}
+
+.Login-button {
+    font-family: var(--font-primary) ;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 15px;
+    padding: 8px 20px;
+    margin-left: 20px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.Login-button:hover {
+    background-color: var(--light-blue);
+}
+
+/* search form start */
+form.d-flex .form-control {
+    border-radius: 50px;
+}
+form.d-flex .btn {
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 15px;
+    font-family: var(--font-primary);
+    padding: 8px 12px;
+    margin-left: 8px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+form.d-flex .form-control:focus {
+    box-shadow: 0 0 10px rgba(1, 79, 134, 0.5);
+    border-color: rgba(1, 42, 74, 0.5);
+}
+
+/* search form end */
+/* icons start */
+.navbar .container-fluid .navbar-brand img,
+.navbar .container-fluid .navbar-brand svg {
+    width: 40px;
+    border-radius: 8px;
+}
+
+/* Style for the cart icon */
+.navbar .container-fluid .collapse .fa-solid {
+    margin-left: 90px;
+    font-size: 25px;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.navbar .container-fluid .collapse .fa-solid:hover{
+    color: var(--light-blue);
+
+}
+/* Style for the cart icon */
+.navbar .container-fluid .collapse .fa-solid {
+    margin-left:10%;
+    font-size: 25px;
+    color: var(--blue);
+    text-decoration: none;
+
+}
+
+.navbar .container-fluid .collapse .fa-solid:hover{
+    color: var(--light-blue);
+
+}
+.navbar-brand img{
+    height: 55px;
+    width: 55px !important;
+}
+/* icons start */
+/* icons start */
+/* nav end */
+
+
+
+
+
+
 body {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     min-height: 50vh;
     /*
@@ -15,23 +134,12 @@ body {
     background-size: cover;
     background-position: center;
     flex-direction: column;
-    padding-top: 10%;
 }
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    background: #162938;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;}
 
 
 .wrapper{
+    margin-top: 5%;
+    padding-top: 2%;
     position: relative;
     width: 400px;
     height: 480px;
@@ -44,7 +152,6 @@ header {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    padding-top:19px;
 }
 
 .logo {
@@ -75,10 +182,13 @@ header {
     z-index: 1;
 }
 
+
 .form-box h2 {
     font-size: 2em;
     color: #162938;
     text-align: center;
+    font-weight: 600;
+
 }
 
 .input-box {
@@ -138,17 +248,20 @@ header {
 .remember-forgot a:hover {
     text-decoration: underline;
 }
-.btn {
+.btn-custom {
     width: 100%;
-    height: 55px;
-    background: #162938;
+    height: 45px;
     border: none;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 1em;
-    color: white;
+    color: white !important;
+    background-color:var(--navy-blue) !important;
     font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for background color and transform */
+}
+.btn-custom:hover { background-color: #418732 !important; /* Darker navy on hover */
+    transform: scale(1.05); /* Slightly increase the size on hover */
 }
 .Signup-Signin {
     font-size: .9em;
@@ -165,4 +278,96 @@ header {
 .Signup-Signin p a:hover {
     text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**footer start**/
+.main-footer {
+    background-color: var(--navy-blue);
+    color: var(--white);
+    margin-top: 5%;
+    padding-top: 4rem;
+    text-align: center;
+    width: 100%;
+}
+
+/* Social Links */
+.social-linkes-container {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.social-linkes-container i {
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--white);
+    border-radius: 50%;
+    margin: 2rem;
+}
+
+.social-linkes-container i {
+    font-size: 2rem;
+    color: var(--navy-blue);
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-linkes-container i:hover {
+    color: var(--beige);
+    transform: scale(1.1);
+}
+
+/* footer links */
+.footer-ul-container {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.footer-ul-container .footer-item {
+    text-decoration: none;
+    color: var(--white);
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-ul-container .footer-item:hover {
+    color: var(--beige);
+}
+
+/* store name and copy right */
+.footer-company {
+    margin-top: 2rem;
+    font-size: 14px;
+    color: var(--white);
+    opacity: 0.8;
+}
+
+.main-footer p {
+    background-color: rgb(0, 16, 59);
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+/**footer end**/
+
+
 

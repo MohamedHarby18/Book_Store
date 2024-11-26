@@ -1,30 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400..700&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Indie+Flower&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap');
+:root {
+    --blue: rgb(1, 79, 134);
+    --navy-blue: rgb(1, 42, 74);
+    --light-blue: #61a5c2;
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --light-bg: rgb(214, 204, 194);
+    --beige: rgb(174, 138, 103);
+    --red: rgb(187, 53, 53);
+    --font-primary: "Libre Bodoni", serif;
+    --font-secondary: "Indie Flower", cursive;
+    --font-heading: "Anton", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-#head_signin {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    background: var(--navy-blue);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;}
 
-#body_signin {
+
+
+
+
+
+
+
+
+
+/* nav start */
+.navbar {
+  width: 100% !important;
+    padding: 1.1rem 1rem !important;
+    z-index: 1050 !important;
+    background-color: rgba(226, 214, 202, 0.9)  !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.container-fluid {
+  padding: 0;
+    flex-direction: row-reverse;
+}
+
+/* Additional container styles if needed */
+
+.nav-link {
+    font-weight: 500 !important;
+    font-size:1em !important;
+    font-family: var(--font-primary) !important;
+    color: var(--navy-blue) !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease, transform 0.2s ease !important;
+    margin: 1em 1.2em !important;
+}
+
+.nav-link:hover {
+    color: var(--white) !important;
+    text-decoration: none !important;
+    background-color: var(--blue) !important;
+    border-radius: 50px !important;
+    transform: translateY(-4px) !important;
+}
+
+.Login-button {
+    font-family: var(--font-primary) ;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 15px;
+    padding: 8px 20px;
+    margin-left: 20px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.Login-button:hover {
+    background-color: var(--light-blue);
+}
+
+/* search form start */
+form.d-flex .form-control {
+    border-radius: 50px;
+}
+form.d-flex .btn {
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 15px;
+    font-family: var(--font-primary);
+    padding: 8px 12px;
+    margin-left: 8px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+form.d-flex .form-control:focus {
+    box-shadow: 0 0 10px rgba(1, 79, 134, 0.5);
+    border-color: rgba(1, 42, 74, 0.5);
+}
+
+/* search form end */
+/* icons start */
+.navbar .container-fluid .navbar-brand img,
+.navbar .container-fluid .navbar-brand svg {
+    width: 40px;
+    border-radius: 8px;
+}
+
+/* Style for the cart icon */
+.navbar .container-fluid .collapse .fa-solid {
+    margin-left: 90px;
+    font-size: 25px;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.navbar .container-fluid .collapse .fa-solid:hover{
+    color: var(--light-blue);
+
+}
+/* Style for the cart icon */
+.navbar .container-fluid .collapse .fa-solid {
+    margin-left:10%;
+    font-size: 25px;
+    color: var(--blue);
+    text-decoration: none;
+
+}
+
+.navbar .container-fluid .collapse .fa-solid:hover{
+    color: var(--light-blue);
+
+}
+.navbar-brand img{
+    height: 55px;
+    width: 55px !important;
+}
+/* icons start */
+/* icons start */
+/* nav end */
+
+
+
+
+
+
+/*.head{*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    padding: 20px 100px;*/
+/*    background: var(--navy-blue);*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    z-index: 99;}*/
+
+body {
     display: flex ;
-    justify-content: center;
     align-items: center;
     min-height: 100vh;
+    justify-content: flex-start;
    /* background: url('ba5.jpg') no-repeat;*/
     background-size: cover;
     background-position: center;
+    flex-direction: column;
+    padding:0px;
+    margin:0px ;
 }
+
 
 
 /*.logo {*/
@@ -33,8 +176,8 @@
 /*    user-select: none;*/
 /*}*/
 
-#wrapper_sigin {
-    position: relative;
+.wrapper {
+    margin-top: 3em;
     width: 400px;
     height: 440px;
     background: transparent;
@@ -74,6 +217,8 @@
     font-size: 2em;
     color: #162938;
     text-align: center;
+    font-weight: 600;
+
 }
 
 .input-boxlogin {
@@ -133,18 +278,22 @@ text-decoration: none;
 .remember-forgot a:hover {
     text-decoration: underline;
 }
-    .btn {
+.btn-custom {
         width: 100%;
         height: 45px;
-        background: #162938;
         border: none;
         outline: none;
         border-radius: 6px;
         cursor: pointer;
-        font-size: 1em;
-        color: white;
+        color: white !important;
+        background-color:var(--navy-blue) !important;
         font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for background color and transform */
     }
+.btn-custom:hover { background-color: #418732 !important; /* Darker navy on hover */
+    transform: scale(1.05); /* Slightly increase the size on hover */
+}
+
 .login-register {
     font-size: .9em;
     color: #162938;
@@ -160,3 +309,102 @@ text-decoration: none;
 .login-register p a:hover {
     text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**footer start**/
+.main-footer {
+    background-color: var(--navy-blue);
+    color: var(--white);
+    margin-top: 10%;
+    padding-top: 4rem;
+    text-align: center;
+    width: 100%;
+}
+
+/* Social Links */
+.social-linkes-container {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.social-linkes-container i {
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--white);
+    border-radius: 50%;
+    margin: 2rem;
+}
+
+.social-linkes-container i {
+    font-size: 2rem;
+    color: var(--navy-blue);
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-linkes-container i:hover {
+    color: var(--beige);
+    transform: scale(1.1);
+}
+
+/* footer links */
+.footer-ul-container {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.footer-ul-container .footer-item {
+    text-decoration: none;
+    color: var(--white);
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-ul-container .footer-item:hover {
+    color: var(--beige);
+}
+
+/* store name and copy right */
+.footer-company {
+    margin-top: 2rem;
+    font-size: 14px;
+    color: var(--white);
+    opacity: 0.8;
+}
+
+.main-footer p {
+    background-color: rgb(0, 16, 59);
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+/**footer end**/
+
+
+
+
