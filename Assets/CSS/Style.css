@@ -3,7 +3,7 @@
 :root {
     --blue: rgb(1, 79, 134);
     --navy-blue: rgb(1, 42, 74);
-    --light-blue: rgb(97, 165, 194);
+    --light-blue: #61a5c2;
     --black: rgb(0, 0, 0);
     --white: rgb(255, 255, 255);
     --light-bg: rgb(214, 204, 194);
@@ -13,18 +13,18 @@
     --font-secondary: "Indie Flower", cursive;
     --font-heading: "Anton", sans-serif;
 }
-body{
-    height: 100rem;
-}
+
 
 /**animation section**/
 @keyframes pulse {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.05);
     }
+
     100% {
         transform: scale(1);
     }
@@ -34,6 +34,7 @@ body{
     0% {
         text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
     }
+
     100% {
         text-shadow: 0 0 15px rgba(255, 255, 255, 1);
     }
@@ -43,26 +44,35 @@ body{
     0% {
         transform: translateX(-100%);
     }
+
     100% {
         transform: translateX(0);
     }
 }
+
 @keyframes colorChange {
     0% {
-        color: var(--white); /* Start with white */
+        color: var(--white);
+        /* Start with white */
     }
+
     50% {
-        color: var(--light-bg); /* Midway color */
+        color: var(--light-bg);
+        /* Midway color */
     }
+
     100% {
-        color: var(--white); /* Final color */
+        color: var(--white);
+        /* Final color */
     }
 }
+
 @keyframes fadeInScale {
     0% {
         opacity: 0;
         transform: scale(0.8);
     }
+
     100% {
         opacity: 1;
         transform: scale(1);
@@ -81,54 +91,61 @@ body{
     opacity: 1;
     transform: scale(1);
 }
+
 /*******************************************************************************/
+
+body{
+    background-color: #e3e6e9 !important
+}
 
 header {
     width: 100%;
     height: 80px;
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header h1 {
     text-align: center;
     font-size: 50px; 
     color: #000; 
-}
-footer {
-    background-color: #333;
-    text-align: center;
+    
 }
 
-footer h5{
-    color: aliceblue;
-    padding: 10px;
-}
 /* nav start */
 .navbar {
-    padding: 0.5rem 1rem;
+    padding: 1.1rem 1rem !important;
+    z-index: 1050 !important;
+    background-color: rgba(226, 214, 202, 0.9)  !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
+
 
 .nav-link {
     font-weight: 500 !important;
-    font-size: 16px !important; 
+    font-size: 16px !important;
     font-family: var(--font-primary) !important;
-    color: var(--black) !important;
+    color: var(--navy-blue) !important;
     text-decoration: none !important;
+    transition: color 0.2s ease, transform 0.2s ease !important;
 }
 
 .nav-link:hover {
-    color:var(--blue) !important;
-    text-decoration: underline !important;
+    color: var(--white) !important;
+    text-decoration: none !important;
+    background-color: var(--blue) !important;
+    border-radius: 50px !important;
+    transform: translateY(-4px) !important;
 }
 
 .Login-button {
+    font-family: var(--font-primary) ;
     background-color: var(--blue);
     color: var(--white);
-    font-size: 12px;
+    font-size: 15px;
     padding: 8px 20px;
-    margin-left: 8px;
+    margin-left: 20px;
     border-radius: 50px;
     text-decoration: none;
 }
@@ -136,6 +153,7 @@ footer h5{
 .Login-button:hover {
     background-color: var(--light-blue);
 }
+
 /* search form start */
 form.d-flex .form-control {
     border-radius: 50px;
@@ -144,29 +162,56 @@ form.d-flex .form-control {
 form.d-flex .btn {
     background-color: var(--blue);
     color: var(--white);
-    font-size: 12px;
+    font-size: 15px;
+    font-family: var(--font-primary);
     padding: 8px 12px;
     margin-left: 8px;
     border-radius: 50px;
     text-decoration: none;
 }
 
-form.d-flex button:hover{
-    background-color: var(--light-blue);
+form.d-flex .form-control:focus {
+    box-shadow: 0 0 10px rgba(1, 79, 134, 0.5); 
+    border-color: rgba(1, 42, 74, 0.5);
 }
+
 /* search form end */
 /* icons start */
 .navbar .container-fluid .navbar-brand img,
 .navbar .container-fluid .navbar-brand svg {
     width: 40px;
-    border-radius: 8px; 
+    border-radius: 8px;
 }
 
-.navbar .container-fluid .collapse img,
-.navbar .container-fluid .collapse svg {
-    width: 30px;
+/* Style for the cart icon */
+.navbar .container-fluid .collapse .fa-solid {
     margin-left: 90px;
+    font-size: 25px;
+    color: var(--blue);
+    text-decoration: none;
 }
+
+.navbar .container-fluid .collapse .fa-solid:hover{
+    color: var(--light-blue);
+
+}
+/* Style for the cart icon */
+.navbar .container-fluid .collapse .fa-solid {
+    margin-left: 120px;
+    font-size: 25px;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.navbar .container-fluid .collapse .fa-solid:hover{
+    color: var(--light-blue);
+
+}
+.navbar-brand img{
+    height: 55px;
+    width: 55px !important;
+}
+/* icons start */
 /* icons start */
 /* nav end */
 /* Main Section After nav bar start */
@@ -202,15 +247,17 @@ form.d-flex button:hover{
     justify-content: center;
     align-items: center;
 }
+
 /*text in the section*/
 .nx-nav-row h1 {
-    font: var(--font-heading) !important; 
+    font-family: var(--font-heading) !important;
     font-size: 7rem !important;
-    font-weight: 600 !important;
+    font-weight: 300 !important;
     animation: glow 1.5s ease-in-out infinite alternate, fadeInScale 2s ease-out forwards, colorChange 3s ease-in-out infinite alternate;
 }
-.nx-nav-row p{
-    font-family: var(--font-secondary) !important; 
+
+.nx-nav-row p {
+    font-family: var(--font-secondary) !important;
     font-size: 1.5rem !important;
     font-weight: 600 !important;
 }
@@ -245,13 +292,16 @@ form.d-flex button:hover{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transform: translateY(-4px);
     color: var(--light-bg) !important;
-    animation: pulse 1s infinite; /* pulse effect on hover */
+    animation: pulse 1s infinite;
+    /* pulse effect on hover */
 }
 
 .btn-main:focus {
-    outline: 4px solid var(--light-blue); /* Enhanced focus outline */
+    outline: 4px solid var(--light-blue);
+    /* Enhanced focus outline */
     outline-offset: 2px;
-    background-color: var(--navy-blue); /* Optional background change on focus */
+    background-color: var(--navy-blue);
+    /* Optional background change on focus */
 }
 
 .btn-main:active {
@@ -263,7 +313,8 @@ form.d-flex button:hover{
 /**some grides**/
 
 .ex-row {
-    margin-top: 20px;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
 }
 
 /* Style columns */
@@ -271,13 +322,11 @@ form.d-flex button:hover{
     text-decoration: none;
     font-family: var(--font-primary);
     color: var(--black);
-    cursor: pointer;
-    margin: 0 10px; 
+    margin: 0 10px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-    font-weight: 600;
     font-size: 1.1rem;
     padding: 10px 0;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
+    border-radius: 2rem;
 }
 
 
@@ -289,8 +338,8 @@ form.d-flex button:hover{
 /* Responsiveness */
 @media (max-width: 768px) {
     .ex-col {
-        font-size: 1rem;  
-        padding: 8px 0;   
+        font-size: 1rem;
+        padding: 8px 0;
     }
 }
 

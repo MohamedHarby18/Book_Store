@@ -2,97 +2,462 @@
 <html lang="ar" dir="rtl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Next Chapter</title>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="Assets/imgs/Next Chapter logo.jpg" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Next Chapter</title>
 
-    <!-- CSS Link Sheet -->
-    <link rel="stylesheet" href="Assets/CSS/Style.css">
-    <link rel="stylesheet" href="Assets/CSS/color-font.css">
+  <!-- CSS Link Sheet -->
+  <link rel="stylesheet" href="Assets/CSS/Style.css">
+  <link rel="stylesheet" href="Assets/CSS/color-font.css">
 
-    <!-- add bootstrap -->
-    <link rel="stylesheet" href="Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <!--some icon may not work-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+  <!-- add bootstrap -->
+  <link rel="stylesheet" href="Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
 </head>
 
 <body>
-    <!-- start nav bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="Assets/imgs/Next Chapter logo.jpg"></a>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav position-absolute top-50 start-50 translate-middle">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Books</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Srvice</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
-                    </li>
-                </ul>
-                <a href="#" class="Login-button position-absolute top-50 start-0 translate-middle-y">
-                    Login
-                </a>
-                <a href="#"><img src="Assets/imgs/cart.png" class="position-absolute top-50 start-0 translate-middle-y" alt=""></a>
-            </div>
-        </div>
-    </nav>
-    <!-- end nav bar -->
-
-    <section id="nx-nav" class="bg-cover hero-section">
-        <div class="overlay"></div>
-        <div class="nx-nav-container text-white text-center d-flex flex-wrap">
-            <div class="nx-nav-row">
-                <h1 class="display-4">Next Chapter</h1>
-                <p>Your Journey Begins with a Book</p>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2 search-in-main" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success bn-search-in-main" type="submit">Search</button>
-                </form>
-                <div class="nx-nav-col btn-container">
-                    <a href="#" class="btn btn-main">Books for sell</a>
-                    <a href="#" class="btn btn-main">Books for listen</a>
-                    <a href="#" class="btn btn-main">Books for free</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="container text-center">
-        <div class="row ex-row">
-          <a class="col ex-col scroll-animate" href="#" aria-label="Best Seller">
-            Best Seller &#128213;
-          </a>
-          <a class="col ex-col scroll-animate" href="#" aria-label="Recently Added">
-            Recently added &#128205;
-          </a>
-          <a class="col ex-col scroll-animate" href="#" aria-label="Deal of the Day">
-            Deal of the day &#128176;
-          </a>
+  <!-- start nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top main-menu">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="Assets/imgs/Next Chapter logo.jpg"></a>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" maxlength="20">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav position-absolute top-50 start-50 translate-middle">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#slides-Services">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About-Us-Container">About us</a>
+          </li>
+        </ul>
+        <a href="#" class="Login-button position-absolute top-50 start-0 translate-middle-y">
+          Login
+        </a>
+        <a href="#"><i class="fa-solid fa-cart-shopping position-absolute top-50 start-0 translate-middle-y"></i></a>
+      </div>
+    </div>
+  </nav>
+  <!-- end nav bar -->
+  <!--frist section-->
+  <section id="nx-nav" class="bg-cover hero-section">
+    <div class="overlay"></div>
+    <div class="nx-nav-container text-white text-center d-flex flex-wrap">
+      <div class="nx-nav-row">
+        <h1 class="display-4">Next Chapter</h1>
+        <p>Your Journey Begins with a Book</p>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 search-in-main" type="search" placeholder="Search" aria-label="Search" maxlength="20">
+          <button class="btn btn-outline-success bn-search-in-main" type="submit">Search</button>
+        </form>
+        <div class="nx-nav-col btn-container">
+          <a href="#" class="btn btn-main">Books for sell</a>
+          <a href="#" class="btn btn-main">Books for listen</a>
+          <a href="#" class="btn btn-main">Books for free</a>
         </div>
       </div>
+    </div>
+  </section>
+  <!--frist grids-->
+  <div class="container text-center">
+    <div class="row ex-row">
+      <a class="col ex-col scroll-animate" href="#best-seller" aria-label="Best Seller">
+        Best Seller &#128213;
+      </a>
+      <a class="col ex-col scroll-animate" href="#Recently-added" aria-label="Recently Added">
+        Recently added &#128205;
+      </a>
+      <a class="col ex-col scroll-animate" href="#Deal-of-the-day" aria-label="Deal of the Day">
+        Deal of the day &#128176;
+      </a>
+    </div>
+  </div>
+  <!--best seller section-->
+  <div class="best-seller" id="best-seller">
+
+    <h1>Best Seller Books</h1>
+
+    <div class="books-mini-view row justify-content-center g-3 p-3">
+      <div class="card col-md-4 scroll-animate" style="width: 18rem;"> <a href="">
+          <img src="Assets/imgs/human_development/img10.jpeg" class="card-img-top" alt="عقدك النفسية سجنك الابدي">
+          <div class="card-body">
+            <h5 class="card-title">عقدك النفسية سجنك الابدي</h5>
+            <p class="card-text"> نُولَد بفضول وشغف لاكتشاف العالم نحاول جاهدين معرفة مَن نحن ولكنهم يصنعون منا نسخًا
+            </p>
+            <a href="#" class="btn btn-primary w-100 btn-book-card">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+      <div class="card col-md-4 scroll-animate" style="width: 18rem;"> <a href="">
+          <img src="Assets/imgs/novels/img9.jpeg" class="card-img-top" alt="يوتوبيا">
+          <div class="card-body">
+            <h5 class="card-title">يوتوبيا</h5>
+            <p class="card-text"> لم يعد في هذا العالم إلا الفقر وإلا الوجوه الشاحبة التي تطل منها عيون جاحظة جوعى
+              متوحشة</p>
+            <a href="#" class="btn btn-primary w-100 btn-book-card">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+      <div class="card col-md-4 scroll-animate" style="width: 18rem;"> <a href="">
+          <img src="Assets/imgs/novels/img33.jpg" class="card-img-top" alt="افراح القبة">
+          <div class="card-body">
+            <h5 class="card-title">افراح القبة</h5>
+            <p class="card-text">تقوم فرقة مسرحية بإعداد وتمثيل عرض مسرحي تدور أحداثه حول وقائع حياة </p>
+            <a href="#" class="btn btn-primary w-100 btn-book-card">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+      <div class="card col-md-4 scroll-animate" style="width: 18rem;"> <a href="">
+          <img src="Assets/imgs/human_development/img39.jpeg" class="card-img-top" alt="Think Again">
+          <div class="card-body">
+            <h5 class="card-title">Think Again</h5>
+            <p class="card-text"> a book about the benefit of doubt, and about how we can get better</p>
+            <a href="#" class="btn btn-primary w-100 btn-book-card">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+      <div class="card col-md-4 scroll-animate" style="width: 18rem;"> <a href="">
+          <img src="Assets/imgs/human_development/img14.jpeg" class="card-img-top" alt="فن اللامبالاة">
+          <div class="card-body">
+            <h5 class="card-title">فن اللامبالاة</h5>
+            <p class="card-text">يتحدث الكتاب عن أهمية التخلص من الأفكار والمشاعر السلبية والتركيز على الأشياء المهمة في
+              الحياة.</p>
+            <a href="#" class="btn btn-primary w-100 btn-book-card"> Add to Cart</a>
+          </div>
+        </a>
+      </div>
+      <div class="card col-md-4 scroll-animate" style="width: 18rem;"> <a href="">
+          <img src="Assets/imgs/human_development/img34.jpeg" class="card-img-top"
+            alt="العادات السبع للناس الأكثر فعالية">
+          <div class="card-body">
+            <h5 class="card-title">العادات السبع للناس الأكثر فعالية</h5>
+            <p class="card-text">كتاب يتعرض لسبع مبادئ، إذا طبقت كعادات فإنها من المفترض أن تساعد الشخص على أن يكون أكثر فعالية.</p>
+            <a href="#" class="btn btn-primary w-100 btn-book-card">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--Recently added section start-->
+  <div class="Recently-added" id="Recently-added">
+
+    <h1>Recently added</h1>
+
+    <div class="books-mini-view row justify-content-center g-3 p-3">
+      <div class="card col-md-4 scroll-animate" style="width: 18rem;"> <a href="">
+          <img src="Assets/imgs/islamic/img5.png" class="card-img-top" alt="رسائل من القران">
+          <div class="card-body">
+            <h5 class="card-title">رسائل من القران</h5>
+            <p class="card-text"> رسائل من القرآن يبني الكتاب أفكاره وقراءاته على آيات القرآن ، ويستخلص المعاني منها ،
+              ويثير قضايا عميقة تهم جميع الناس.
+            </p>
+            <a href="#" class="btn btn-primary w-100 btn-book-card">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+      <div class="card col-md-4 scroll-animate" style="width: 18rem;"> <a href="">
+          <img src="Assets/imgs/novels/img25.jpeg" class="card-img-top" alt="The Last Secret">
+          <div class="card-body">
+            <h5 class="card-title">The Last Secret</h5>
+            <p class="card-text"> A sweeping, dazzling dual-timeline novel centering on two unforgettable women—and
+              their inextricable link to each other decades apart.</p>
+            <a href="#" class="btn btn-primary w-100 btn-book-card">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+      <div class="card col-md-4 scroll-animate" style="width: 18rem;"> <a href="">
+          <img src="Assets/imgs/novels/img8.jpeg" class="card-img-top" alt="الليالي البيضاء">
+          <div class="card-body">
+            <h5 class="card-title">الليالي البيضاء</h5>
+            <p class="card-text">قصة قصيرة من تأليف الكاتب الروسي فيودور دوستويفسكي. القصة تُعدُّ من أوائل أعماله،
+              ونُشِرت للمرة الأولى في عام 1984</p>
+            <a href="#" class="btn btn-primary w-100 btn-book-card">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+      <div class="card col-md-4 scroll-animate" style="width: 18rem;"> <a href="">
+          <img src="Assets/imgs/kids/img47.jpg" class="card-img-top" alt="ألاسود الأخرون">
+          <div class="card-body">
+            <h5 class="card-title">ألاسود الأخرون</h5>
+            <p class="card-text">وجدت لبؤة أم وصغارها أنفسهم مضطرين إلى مغادرة الغابة التي عاشوا فيها سنين طويلة. فلما
+              مشوا كثيرا لساعات، ووصلوا إلى غابة أخرى بعيدة جدا، لم يرض ملك الغابة أن يقبلهم في غابته </p>
+            <a href="#" class="btn btn-primary w-100 btn-book-card">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+      <div class="card col-md-4 scroll-animate" style="width: 18rem;"> <a href="">
+          <img src="Assets/imgs/human_development/img35.jpeg" class="card-img-top" alt="نظرية الفستق">
+          <div class="card-body">
+            <h5 class="card-title">نظرية الفستق</h5>
+            <p class="card-text">كتاب سيغير طريقة تفكيرك وحكمك على الأشياء. يحتوي على مجموعة مقالات تتمحور غالبا عن
+              تطوير الذات والبرمجة اللغوية العصبية وطرق التفكير والوعي والسلوك الإنساني. </p>
+            <a href="#" class="btn btn-primary w-100 btn-book-card">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+      <div class="card col-md-4 scroll-animate" style="width: 18rem;"> <a href="">
+          <img src="Assets/imgs/islamic/img18.jpeg" class="card-img-top" alt="لأني عبدك">
+          <div class="card-body">
+            <h5 class="card-title">لأني عبدك</h5>
+            <p class="card-text"> كتاب يشرح معنى بعض الايات و لكن ليس مثل كتب التفسير,المؤلف الشاب عمر ال عوضه خواطر دينيه
+              كنت وحيدا فجعلني الله خطيبا امام الملايين كنت كسيرا فجعلني الله جابر للقلوب
+              كنت شقيا فاعزني الله بطاعته</p>
+            <a href="#" class="btn btn-primary w-100 btn-book-card">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--Recently added section end-->
+  <!--Deal of the day section start-->
+  <div class="Deal-of-the-day" id="Deal-of-the-day">
+
+    <h1>Deal of the day</h1>
+
+    <div class="books-mini-view row justify-content-center g-3 p-3" >
+      <div class="card col-md-4 scroll-animate" style="width: 18rem;"> <a href="">
+          <img src="Assets/imgs/islamic/img22.jpeg" class="card-img-top" alt="إن ربي لطيف">
+          <div class="card-body">
+            <h5 class="card-title">إن ربي لطيف</h5>
+            <p class="card-text"> كم من مرة تقول لماذا يحصل معي كذا وكذا؛ ولا تعلم أنه من لطف الله تبارك وتعالى عليك أن حصل هذا الأمر لك، أحيانًا تريد أمرًا تظن أنه خير فيصرفه الله عن فتحزن لذلك ولا تعلم أن العالم بدقائق الأمور وخفاياها هو لطيف بك
+            </p>
+            <a href="#" class="btn btn-primary w-100 btn-book-card">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+      <div class="card col-md-4 scroll-animate" style="width: 18rem;"> <a href="">
+          <img src="Assets/imgs/human_development/img35.jpeg" class="card-img-top" alt="نظرية الفستق">
+          <div class="card-body">
+            <h5 class="card-title">نظرية الفستق</h5>
+            <p class="card-text">كتاب سيغير طريقة تفكيرك وحكمك على الأشياء. يحتوي على مجموعة مقالات تتمحور غالبا عن
+              تطوير الذات والبرمجة اللغوية العصبية وطرق التفكير والوعي والسلوك الإنساني. </p>
+            <a href="#" class="btn btn-primary w-100 btn-book-card">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+      <div class="card col-md-4 scroll-animate" style="width: 18rem;"> <a href="">
+          <img src="Assets/imgs/novels/img1.jpg" class="card-img-top" alt="أمواج أكما">
+          <div class="card-body">
+            <h5 class="card-title">أمواج أكما</h5>
+            <p class="card-text">رواية أمواج أكما تأليف عمرو عبد الحميد .. كنتُ أظن أن تغيير القواعد يحتاج إلى القوة
+              وحسب، لكنه لم يكن بهذه السهولة قط! لقد أثر أشراف چارتين أن يموتوا غرقى أسفل أمواج أكما، على أن يتساووا
+              معنا فى حق اكتساب الروح.</p>
+            <a href="#" class="btn btn-primary w-100 btn-book-card">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+      <div class="card col-md-4 scroll-animate" style="width: 18rem;"> <a href="">
+          <img src="Assets/imgs/kids/img48.jpg" class="card-img-top" alt="هيفاء ملكة الازياء">
+          <div class="card-body">
+            <h5 class="card-title">هيفاء ملكة الازياء</h5>
+            <p class="card-text">
+              إنّها قصة فتاةٍ تعرّضت لموقفٍ قد يواجِه كثيرًا مِنكم على منصّاتِ التواصل الاجْتماعي فَكيفَ تعاملت معه
+              هيفاءُ ملكة الأزياِء؟
+            </p>
+            <a href="#" class="btn btn-primary w-100 btn-book-card">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+      <div class="card col-md-4 scroll-animate" style="width: 18rem;"> <a href="">
+          <img src="Assets/imgs/human_development/img15.png" class="card-img-top" alt="التغيير للأفضل">
+          <div class="card-body">
+            <h5 class="card-title">التغيير للأفضل</h5>
+            <p class="card-text">هل تشعر بأنك تتصرَّف بطُرق غير مفهومة وتُكرِّر أخطاءك؟ هل تريد أن تفهم شخصيتك وما يُحركها وما سيجعلها أفضل وأنجح ومحبوبة أكثر؟ إذن هذا الكتاب لك!</p>
+            <a href="#" class="btn btn-primary w-100 btn-book-card">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+      <div class="card col-md-4 scroll-animate" style="width: 18rem;"> <a href="">
+          <img src="Assets/imgs/islamic/img20.jpeg" class="card-img-top" alt="لأنك الله">
+          <div class="card-body">
+            <h5 class="card-title">لأنك الله</h5>
+            <p class="card-text">اكتاب يتحدث عن بعض أسماء الله الحسنى وكيف نعيشها في حياتنا حرص المؤلف أن يكون الكتاب
+              مناسباً لمن هم متوسطي الثقافة، ويكون ناسباً للمحتاج و المريض و السليم</p>
+            <a href="#" class="btn btn-primary w-100 btn-book-card">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--Slider here-->
+  <div class="slides-Services" id="slides-Services">
+    <h1>Our Services</h1>
+    <div 
+      id="carouselExampleCaptions" 
+      class="carousel slide" 
+      data-bs-ride="carousel" 
+      data-bs-interval="1700">
       
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+  
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Assets/imgs/slides/slide1.png" style="height: 40rem;" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Variety In Books</h4>
+            <p>You will find what you are looking for here.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Assets/imgs/slides/slide2.png" style="height: 40rem;" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Fast Delivery On Orders Over</h4>
+            <p>We only take few days to get your order wherever you want.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Assets/imgs/slides/slide3.png" style="height: 40rem;" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>E-Book</h4>
+            <p>we offer you a virtual copy of your favourite book to enjoy it everywhere.</p>
+          </div>
+        </div>
+      </div>
+  
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!--Slider here ends-->
+ <!-- About Us Section Start -->
+<div class="responsive-container-block About-Us-Container" id="About-Us-Container">
+  <div class="responsive-container-block Container">
+    <p class="text-blk heading">
+      About Us
+    </p>
+    <p class="text-blk subHeading">
+      Welcome to Next Chapter, where stories come alive and knowledge knows no bounds! Our bookstore is more than just a place to buy
+       books—it's a haven for book lovers, a sanctuary for curious minds, and a gateway to countless adventures. We pride ourselves on
+        offering a diverse collection of books across genres, from timeless classics to modern bestsellers, inspirational self-help, 
+        captivating novels, and engaging children’s literature. Whether you’re seeking to explore new ideas, spark your imagination,
+         or find the perfect gift for a loved one, we’re here to make your literary journey unforgettable. At Next Chapter,
+          every page holds a new possibility.
+    </p>
+    <div class="social-icons-container">
+      <a href="#" class="social-icon" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="#" class="social-icon" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="social-icon" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="social-icon" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- About Us Section End -->
+ <!--Customer reviwe start-->
+<div class="container py-5">
+  <div class="text-center mb-5">
+    <h4 class="font-cond-l text-primary mb-3">Not Yet Convinced ?</h4>
+    <h1 class="font-cond-b text-dark">Read Customer Reviews</h1>
+  </div>
 
-    <footer>
-        <h5>.2024 Next Chapter Team. All rights reserved ©</h5>
-    </footer>
+  <!-- Reviews Carousel -->
+  <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Review 1 -->
+      <div class="carousel-item active">
+        <div class="row justify-content-center">
+          <div class="col-md-4 text-center">
+            <img src="Assets/imgs/customer1.png" class="w-50 rounded-circle mb-3" alt="Martha Stewart">
+            <p class="font-cond-l fs-5">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae."</p>
+            <h5 class="font-cond text-dark">Mesh 7eml</h5>
+            <small class="font-cond text-muted">Basha El Balad - KFC</small>
+          </div>
+        </div>
+      </div>
+      <!-- Review 2 -->
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-4 text-center">
+            <img src="Assets/imgs/customer2.png" class="w-50 rounded-circle mb-3" alt="Ariana Menage">
+            <p class="font-cond-l fs-5">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae."</p>
+            <h5 class="font-cond text-dark">El Usta 3bdo</h5>
+            <small class="font-cond text-muted">Saba7o - Good morning everyboding</small>
+          </div>
+        </div>
+      </div>
+      <!-- Review 3 -->
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-4 text-center">
+            <img src="Assets/imgs/customer3.jpg" class="w-50 rounded-circle mb-3" alt="Sean Carter">
+            <p class="font-cond-l fs-5">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."</p>
+            <h5 class="font-cond text-dark">Nasser El Desoky</h5>
+            <small class="font-cond text-muted">Number 1 - El Ustora</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<!-- End Customer Review Section -->
 
-    <!-- JS Link Sheet -->
-    <script src="Assets/js/main.js"></script>
-    <!-- bootstrap JS Link Sheet -->
-    <script src="Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
-    <script src="Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+  <!--Recently added section end-->
+  <!--footer-->
+  <footer class="main-footer">
+    <div class="social-linkes-container">
+      <i class="fab fa-github"></i>
+      <i class="fab fa-discord"></i>
+      <i class="fab fa-paypal"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+    <ul class="footer-ul-container">
+      <li class=""><a href="#" class="footer-item">Home</a></li>
+      <li class=""><a href="#" class="footer-item">Pricing</a></li>
+      <li class=""><a href="#" class="footer-item">FAQs</a></li>
+      <li class=""><a href="#" class="footer-item">About</a></li>
+      <li class=""><a href="#" class="footer-item">Features</a></li>
+    </ul>
+    <p class="footer-company">© 2024 Next Chapter, Inc</p>
+  </footer>
+
+  <!-- JS Link Sheet -->
+  <script src="Assets/js/main.js"></script>
+  <!-- bootstrap JS Link Sheet -->
+  <script src="Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+  <script src="Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
