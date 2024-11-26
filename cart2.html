@@ -50,7 +50,7 @@
         <a href="#" class="Login-button position-absolute top-50 start-0 translate-middle-y">
           Login
         </a>
-        <a href="#"><i class="fa-solid fa-cart-shopping position-absolute top-50 start-0 translate-middle-y"></i></a>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping position-absolute top-50 start-0 translate-middle-y"></i></a>
       </div>
     </div>
   </nav>
@@ -87,7 +87,6 @@
       <input type="text" id="lname" name="number" placeholder="Your mobile number">
 
 
-      <input type="submit" value="Submit">
     </form>
   </div>
   <h3 style="direction: ltr; margin-left: 30px; margin-top: 20px;">Payment method</h3>
@@ -103,13 +102,12 @@
         <label for="cash">Cash</label><i class="fa-solid fa-money-bill"></i>
         </div>
     </div>
-      <input type="submit" value="Submit">
     </form>
   </div>
-  <div class="checkout">
-    <a href="#" class="checkout-link">
-      <h1 class="checkout-heading">Submit </h1>
-    </a>
+  
+  <div class="Submit">
+    <button  onclick="Buy_Alert()">Submit order</button>
+    <p id="buy_confirm"></p>
   </div>
 
   <!--footer-->
