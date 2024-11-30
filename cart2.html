@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="Assets/imgs/Next Chapter logo.jpg" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>cart</title>
+
+  <!-- CSS Link Sheet -->
+  <link rel="stylesheet" href="Assets/CSS/Style.css">
+  <link rel="stylesheet" href="Assets/CSS/color-font.css">
+  <link rel="stylesheet" href="Assets/CSS/cart.css">
+
+  <!--some icon may not work-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <!-- add bootstrap -->
+  <link rel="stylesheet" href="Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <!-- start nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top main-menu">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="Assets/imgs/Next Chapter logo.jpg"></a>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" maxlength="20">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav position-absolute top-50 start-50 translate-middle">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#slides-Services">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About-Us-Container">About us</a>
+          </li>
+        </ul>
+        <a href="#" class="Login-button position-absolute top-50 start-0 translate-middle-y">
+          Login
+        </a>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping position-absolute top-50 start-0 translate-middle-y"></i></a>
+      </div>
+    </div>
+  </nav>
+  <!-- end nav bar -->
+
+
+  <header>
+    <div class="container">
+      <h1>Checkout</h1>
+    </div>
+  </header>
+
+  <div class="form_container">
+    <form action="/action_page.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="country">Governorates</label>
+      <select id="country" name="country">
+        <option value="Cairo">Cairo</option>
+        <option value="Alexandria">Alexandria</option>
+        <option value="Giza">Giza</option>
+      </select>
+      <label for="lname">Address</label>
+      <input type="text" id="lname" name="address" placeholder="Your address">
+
+      <label for="lname">City</label>
+      <input type="text" id="lname" name="city" placeholder="Your city">
+
+      <label for="lname">Mobile Number</label>
+      <input type="text" id="lname" name="number" placeholder="Your mobile number">
+
+
+    </form>
+  </div>
+  <h3 style="direction: ltr; margin-left: 30px; margin-top: 20px;">Payment method</h3>
+  <div class="payment">
+    <form>
+      <div class="method">
+        <div class="icon_method">
+        <input type="radio" id="credit_card" name="payment_way" value="Credit_card">
+        <label for="credit_card">Credit card</label><i class="fa-brands fa-cc-visa"></i>
+        </div>
+        <div class="icon_method">
+        <input type="radio" id="cash" name="payment_way" value="Cash">
+        <label for="cash">Cash</label><i class="fa-solid fa-money-bill"></i>
+        </div>
+    </div>
+    </form>
+  </div>
+  
+  <div class="Submit">
+    <button  onclick="Buy_Alert()">Submit order</button>
+    <p id="buy_confirm"></p>
+  </div>
+
+  <!--footer-->
+  <footer class="main-footer">
+    <div class="social-linkes-container">
+      <i class="fab fa-github"></i>
+      <i class="fab fa-discord"></i>
+      <i class="fab fa-paypal"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+    <ul class="footer-ul-container">
+      <li class=""><a href="#" class="footer-item">Home</a></li>
+      <li class=""><a href="#" class="footer-item">Pricing</a></li>
+      <li class=""><a href="#" class="footer-item">FAQs</a></li>
+      <li class=""><a href="#" class="footer-item">About</a></li>
+      <li class=""><a href="#" class="footer-item">Features</a></li>
+    </ul>
+    <p class="footer-company">© 2024 Next Chapter, Inc</p>
+  </footer>
+  <!-- JS Link Sheet -->
+  <script src="Assets/js/main.js"></script>
+  <!-- bootstrap JS Link Sheet -->
+  <script src="Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+  <script src="Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

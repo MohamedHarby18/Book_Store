@@ -84,5 +84,16 @@ const navigateTab = function () {
   this.classList.add("active");
   lastTabCard = this;
 }
-
+/*********************************************cart JS **************************************************************/
 addEventOnelem(tabCard, "click", navigateTab);
+
+function Buy_Alert() {
+  var Buy_confirm;
+  if (confirm("Confirm your purchase?")) {
+      Buy_confirm = ".Your purchase has been successfully confirmed";
+  }
+  else {
+      Buy_confirm = ""
+  }
+  document.getElementById("buy_confirm").innerHTML = Buy_confirm;
+}

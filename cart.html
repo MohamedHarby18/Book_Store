@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="Assets/imgs/Next Chapter logo.jpg" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>cart</title>
+
+  <!-- CSS Link Sheet -->
+  <link rel="stylesheet" href="Assets/CSS/Style.css">
+  <link rel="stylesheet" href="Assets/CSS/color-font.css">
+  <link rel="stylesheet" href="Assets/CSS/cart.css">
+
+  <!--some icon may not work-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <!-- add bootstrap -->
+  <link rel="stylesheet" href="Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <!-- start nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top main-menu">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="Assets/imgs/Next Chapter logo.jpg"></a>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" maxlength="20">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav position-absolute top-50 start-50 translate-middle">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#slides-Services">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About-Us-Container">About us</a>
+          </li>
+        </ul>
+        <a href="#" class="Login-button position-absolute top-50 start-0 translate-middle-y">
+          Login
+        </a>
+        <a href="#"><i class="fa-solid fa-cart-shopping position-absolute top-50 start-0 translate-middle-y"></i></a>
+      </div>
+    </div>
+  </nav>
+  <!-- end nav bar -->
+
+  <header>
+    <div class="container">
+      <h1>Shopping Cart</h1>
+    </div>
+  </header>
+
+  <h2 class="items">:Items</h2>
+  
+  <div class="image">
+    <a href="#">
+      <img src="Assets/imgs/human_development/img14.jpeg">
+    </a>
+  </div>
+
+  <div class="num">
+    <legend class="legend-text">amount :</legend>
+    <input type="number" class="number-input">
+    <a class="delete-btn" href="#">delete</a>
+    <a class="update-btn" href="#">update</a>
+  </div>
+
+  <div class="container">
+    <div class="cart">
+      <table>
+        <tr>
+          <th>Discounts</th>
+          <th>Cash</th>
+        </tr>
+        <tr>
+          <td>total before discount</td>
+          <td>$20.00</td>
+        </tr>
+        <tr>
+          <td>total after discount</td>
+          <td>$15.00</td>
+        </tr>
+        <tr>
+          <td>
+            total
+          </td>
+          <td>$15.00</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="clear">
+    <a href="#" class="clear-link">
+      Clear all
+    </a>
+  </div>
+  
+
+  <div class="checkout">
+    <a href="cart2.html" class="checkout-link">
+      <h1 class="checkout-heading">Check out</h1>
+    </a>
+  </div>
+
+  <!--footer-->
+  <footer class="main-footer">
+    <div class="social-linkes-container">
+      <i class="fab fa-github"></i>
+      <i class="fab fa-discord"></i>
+      <i class="fab fa-paypal"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+    <ul class="footer-ul-container">
+      <li class=""><a href="#" class="footer-item">Home</a></li>
+      <li class=""><a href="#" class="footer-item">Pricing</a></li>
+      <li class=""><a href="#" class="footer-item">FAQs</a></li>
+      <li class=""><a href="#" class="footer-item">About</a></li>
+      <li class=""><a href="#" class="footer-item">Features</a></li>
+    </ul>
+    <p class="footer-company">© 2024 Next Chapter, Inc</p>
+  </footer>
+  <!-- JS Link Sheet -->
+  <script src="Assets/js/main.js"></script>
+  <!-- bootstrap JS Link Sheet -->
+  <script src="Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+  <script src="Assets/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
