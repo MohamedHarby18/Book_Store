@@ -172,76 +172,72 @@ ion-icon { pointer-events: none; }
 
 
 /* nav start */
-
 .navbar {
-    padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
 }
 
 .nav-link {
-    font-weight: 500 ;
-    font-size: 22px ; 
-    font-family: var(--font-primary) ;
-    color: var(--black) ;
-    text-decoration: none ;
+  font-weight: 500 !important;
+  font-size: 16px !important; 
+  font-family: var(--font-primary) !important;
+  color: var(--black) !important;
+  text-decoration: none !important;
 }
 
 .nav-link:hover {
-    color:var(--white) ;
-    text-decoration:none ;
-    background-color: var(--blue) ;
-    border-radius: 50px ;
-    transform: translateY(-4px) ;
+  color:var(--white) !important;
+  text-decoration:none !important;
+  background-color: var(--blue) !important;
+  border-radius: 50px !important;
+  transform: translateY(-4px) !important;
 }
 
 .Login-button {
-    background-color: var(--blue);
-    color: var(--white);
-    font-size: 12px;
-    padding: 8px 20px;
-    margin-left: 8px;
-    border-radius: 50px;
-    -decoration: none;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 12px;
+  padding: 8px 20px;
+  margin-left: 8px;
+  border-radius: 50px;
+  text-decoration: none;
 }
 
 .Login-button:hover {
-    background-color: var(--light-blue);
+  background-color: var(--light-blue);
 }
 /* search form start */
 form.d-flex .form-control {
-    border-radius: 50px;
+  border-radius: 50px;
 }
 
 form.d-flex .btn {
-    background-color: var(--blue);
-    color: var(--white);
-    font-size: 12px;
-    padding: 8px 12px;
-    margin-left: 8px;
-    border-radius: 50px;
-    text-decoration: none;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 12px;
+  padding: 8px 12px;
+  margin-left: 8px;
+  border-radius: 50px;
+  text-decoration: none;
 }
 
 form.d-flex button:hover{
-    background-color: var(--light-blue);
+  background-color: var(--light-blue);
 }
 /* search form end */
 /* icons start */
 .navbar .container-fluid .navbar-brand img,
 .navbar .container-fluid .navbar-brand svg {
-    width: 40px;
-    border-radius: 8px; 
+  width: 40px;
+  border-radius: 8px; 
 }
 
 .navbar .container-fluid .collapse img,
 .navbar .container-fluid .collapse svg {
-    width: 30px;
-    margin-left: 90px;
+  width: 30px;
+  margin-left: 90px;
 }
 /* icons start */
 /* nav end */
-
-
-
 
 
 html {
