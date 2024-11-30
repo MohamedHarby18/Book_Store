@@ -8,6 +8,8 @@ window.addEventListener('scroll', function() {
       }
     });
   });
+
+/************************************************ Book View JS *******************************************/
   
   'use strict';
 
